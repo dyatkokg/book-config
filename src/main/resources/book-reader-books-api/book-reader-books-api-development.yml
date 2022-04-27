@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: book-reader-books-api
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/Books_App
