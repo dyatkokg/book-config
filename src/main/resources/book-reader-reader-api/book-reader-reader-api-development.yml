@@ -1,0 +1,15 @@
+logging:
+  level:
+    org.springframework.web.client.RestTemplate: DEBUG
+
+api:
+  external:
+    book-reader-books-api:
+      name: book-reader-books-api
+      url: ${BOOKS_URL:localhost:8082/books/}
+      endpoint: {id}
+
+full-path: ${api.external.book-reader-books-api.url}${api.external.book-reader-books-api.endpoint}
+
+token:
+  signature: x7HktL7QmQwR7Ii98AU3eACZ70arilFhCIgz54IYEOMCL0UIl7MWCBXeEzyQ6syQmWXWJACQzOWkrWd2DBnibCbENjd6fV7m073e27KkERwBSrmSX0hv28P8rP6LSXY1xs24Fr6w3Se7amJ9fRSPfIL0cXdujrtUUPjPp8M1M6SKJezzOMkSKZtihTKRscQrBjcTPJWs
