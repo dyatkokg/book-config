@@ -3,6 +3,6 @@ spring:
     name: book-reader-users-api
   data:
     mongodb:
-      uri: mongodb://localhost:27017/Books_App
+      uri: ${MONGO:mongodb://localhost:27017/Books_App}
 token:
   signature: x7HktL7QmQwR7Ii98AU3eACZ70arilFhCIgz54IYEOMCL0UIl7MWCBXeEzyQ6syQmWXWJACQzOWkrWd2DBnibCbENjd6fV7m073e27KkERwBSrmSX0hv28P8rP6LSXY1xs24Fr6w3Se7amJ9fRSPfIL0cXdujrtUUPjPp8M1M6SKJezzOMkSKZtihTKRscQrBjcTPJWs
